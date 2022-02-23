@@ -9,7 +9,9 @@ const routes: Routes = [
   {
     path: 'ventas',
     loadChildren: () => import('./ventas/ventas.module').then(m => m.VentasModule)
-  }
+  },
+  {path: 'sales', redirectTo: 'ventas'},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
