@@ -73,9 +73,6 @@ img {
 }
 
 .container.fade {
-    max-width: 920px;
-    padding: 24px;
-    margin: 0 auto;
     opacity: 0;
     transition: opacity 500ms;
 }

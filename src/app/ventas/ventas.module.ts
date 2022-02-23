@@ -8,7 +8,7 @@ import { ClientesService } from './clientes.service';
 import { TablaClientesComponent } from './clientes/tabla-clientes/tabla-clientes.component';
 import { VisualizarClienteComponent } from './clientes/visualizar-cliente/visualizar-cliente.component';
 import { CrearClienteComponent } from './clientes/crear-cliente/crear-cliente.component';
-
+import { CompartidoModule } from '../compartido/compartido.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { CrearClienteComponent } from './clientes/crear-cliente/crear-cliente.co
   imports: [
     CommonModule,
     VentasRoutingModule,
-    FormsModule
+    FormsModule,
+    CompartidoModule,
   ],
   providers: [
     ClientesService

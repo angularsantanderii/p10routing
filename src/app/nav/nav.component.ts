@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FakeAuthService } from '../fake-auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fakeAuthService: FakeAuthService) { }
 
   ngOnInit(): void {
+  }
+
+  hasVentasAccess(): boolean {
+    return this.fakeAuthService.hasVentasAccess();
   }
 
 }

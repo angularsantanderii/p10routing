@@ -13,6 +13,7 @@ export class CrearClienteComponent implements OnInit {
     nombre: '',
     cif: '',
     localidad: '',
+    id: Math.random().toString().slice(-4) // No lo haga en casa :)
   }
 
   constructor(private clientesService: ClientesService,
