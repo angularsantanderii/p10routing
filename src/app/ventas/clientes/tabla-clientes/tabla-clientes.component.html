@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-100">
+            <h1>Clientes</h1>
+            <button routerLink="../">Regresar</button>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>CIF</th>
+                    <th></th>
+                </tr>
+                <tr *ngFor="let cliente of clientes">
+                    <td>{{cliente.nombre}}</td>
+                    <td>{{cliente.cif}}</td>
+                    <td routerLink="/ventas/visualizar-cliente/{{cliente.id}}">Visualizar</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
